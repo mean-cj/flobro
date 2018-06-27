@@ -194,6 +194,9 @@ webview.addEventListener('permissionrequest', function(e) {
     if (e.permission === 'download' || e.permission === 'fullscreen') {
         e.request.allow();
     }
+    if (e.permission === 'media') {
+      e.request.allow();
+    }
 });
 
 // open cached links
